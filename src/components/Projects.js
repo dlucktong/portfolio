@@ -72,7 +72,7 @@ export default function Projects({projectRef}) {
                     video: "https://youtube.com/embed/obWGwzrKWqw",
                     links: [{label: "Code", url: "https://github.com/dlucktong/dine-and-dash", icon: <FontAwesomeIcon icon={faCode} />}, {
                         label: "Download",
-                        url: "#",
+                        url: "DineAndDashBeta.zip",
                         icon: <FontAwesomeIcon icon={faDownload} />
                     }]
                 }} toggleDialog={toggleDialog} setVideo={setVideo}/>

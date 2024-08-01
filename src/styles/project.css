@@ -145,6 +145,7 @@ span {
 }
 
 .additional {
+    position: relative;
     width: 100%;
     height: fit-content;
     max-width: 700px;

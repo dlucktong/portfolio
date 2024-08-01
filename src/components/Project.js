@@ -109,6 +109,7 @@ export default function Project({data, toggleDialog, setVideo}) {
                     moreInfo();
                 }}}>
                 <div className={"additional"} >
+                    <button className={"close"} onClick={moreInfo}>x</button>
                     <img src={data.img} alt={data.title + " cover"}></img>
                     <div>
                         <h3>{data.title}</h3>

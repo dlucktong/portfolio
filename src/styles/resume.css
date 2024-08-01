@@ -6,13 +6,13 @@
 .resumebtn {
     position: relative;
     border: 2px solid #2d3b50;
-    height: 3rem;
     width: fit-content;
     font-size: 1rem;
     padding: 0.5rem;
     background: none;
     overflow: hidden;
     transition: color 0.3s;
+    text-decoration: none;
 }
 
 .resumebtn:before {
