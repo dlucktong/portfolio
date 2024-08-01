@@ -1,0 +1,43 @@
+#resume {
+    justify-content: flex-start;
+    min-height: 0
+}
+
+.resumebtn {
+    position: relative;
+    border: 2px solid #2d3b50;
+    height: 3rem;
+    width: fit-content;
+    font-size: 1rem;
+    padding: 0.5rem;
+    background: none;
+    overflow: hidden;
+    transition: color 0.3s;
+}
+
+.resumebtn:before {
+    position: absolute;
+    content: "";
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%) translateY(-100%);
+    background-color: #2d3b50;
+    transition: transform 0.2s;
+    z-index: -22;
+}
+
+.resumebtn:hover:before {
+    transform: translateX(0) translateY(0);
+}
+.resumebtn:hover {
+    color: #E0E1DD;
+}
+
+@media only screen and (max-width: 768px) {
+    #resume {
+        align-items: center;
+    }
+}
+

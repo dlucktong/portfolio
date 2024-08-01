@@ -1,0 +1,152 @@
+.intro {
+    margin: 0;
+    font-family: "Annapurna SIL", serif;
+    font-style: normal;
+}
+
+b {
+    font-family: inherit;
+    font-weight: bold;
+}
+
+strong {
+    font-family: inherit;
+    font-weight: 500;
+}
+
+.subheader {
+    display: flex;
+    gap: 20px;
+}
+
+.subheader h2:not(:first-child):before {
+    content: "";
+    border: 1px solid black;
+    align-self: stretch;
+    margin-right: 20px;
+}
+
+#about {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: center;
+}
+
+.socials {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.socials > a, button {
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.aboutInfo {
+    display:flex;
+    flex-direction: row;
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    height: min-content;
+    flex: 0 60vw;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+}
+
+.text-container {
+    width: 100%;
+    font-size: 1.75rem;
+    background-color: transparent;
+}
+
+.profile-img {
+    flex: 1 1 40vw;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    background-color: transparent;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px
+}
+
+.btn {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #415A77;
+    text-align: center;
+    line-height: 5rem;
+    color: #E0E1DD;
+    transition: scale 1s;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px #f0f1ec;
+    cursor: pointer;
+}
+
+.btn:first-child {
+    background-color: #2D3B51
+}
+
+.btn:nth-child(2) {
+    background-color: #404F67;
+}
+
+.btn:nth-child(3) {
+    background-color: #52647D;
+}
+.btn:last-child {
+    background-color: #657893;
+}
+
+@media only screen and (max-width : 1024px) {
+    #about {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .aboutInfo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-img {
+        order: -1;
+    }
+
+    .text-container {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .profile-img {
+        flex: 1 1 70vmin;
+    }
+}
+
+* {
+    color: #0D1B2A;
+}

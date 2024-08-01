@@ -1,0 +1,48 @@
+#contact {
+    justify-content: flex-start;
+    min-height: 50vh;
+}
+
+.blue {
+    color: #4c92ff;
+}
+
+.email {
+    position: relative;
+    cursor: pointer;
+}
+
+.email:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: black;
+    transition: width 0.2s;
+}
+.email:hover:after {
+    width: 100%;
+}
+
+#copyMessage {
+    position: absolute;
+    color: green;
+    opacity: 0;
+    transition: opacity 0.5s;
+    top: 1.5rem;
+    left: 0;
+}
+
+.show {
+    opacity: 1 !important;
+}
+
+@media only screen and (max-width: 768px) {
+    #contact {
+        align-items: center;
+        text-align: center;
+    }
+}
+
